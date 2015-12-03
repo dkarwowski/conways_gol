@@ -338,8 +338,8 @@ Life_Print:
 row_start:	.asciiz ""
 row_end:	.asciiz "|\n"
 clr_screen:	.asciiz "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-alive:		.asciiz "| X "
-dead:		.asciiz "|   "
+alive:		.asciiz "|X"
+dead:		.asciiz "| "
 			.text
 		lw		$t0, 0 ($a0)		#  Get the number of rows
 		lw		$t1, 4 ($a0)		#  Get the number of columns
